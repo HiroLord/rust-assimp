@@ -423,7 +423,7 @@ pub enum Process {
     /// `Process::FlipWindingOrder` flags.  The output data matches Direct3D's
     /// conventions: left-handed geometry, upper-left origin for UV coordinates
     /// and finally clockwise face order, suitable for CCW culling.
-    #[deprecated]
+    //#[deprecated]
     ConvertToLeftHanded = 0x1800004,
 
 

@@ -16,7 +16,7 @@
 #![feature(unsafe_destructor)]
 #![feature(core, collections, std_misc, old_io)]
 #![feature(libc)]
-#![unstable]
+//#![unstable]
 
 extern crate libc;
 extern crate vecmath;

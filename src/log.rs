@@ -9,7 +9,7 @@ use types::AiBool;
 use ffi;
 
 pub use log::LogStream::{Stdout, Stderr, Debugger, File, Custom};
-use std::old_io::Writer;
+use std::io::Write;
 use std::ffi::CString;
 
 /// Default logging options for assimp
@@ -24,7 +24,7 @@ pub enum LogStream<'a> {
     /// Log to the given file
     File(&'a str),
     /// Log to the given writer
-    Custom(&'a mut (Writer+'a))
+    Custom(&'a mut (Write+'a))
 }
 
 // TODO//{{{
